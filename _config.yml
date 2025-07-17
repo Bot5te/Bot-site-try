@@ -1,0 +1,21 @@
+# GitHub Pages Configuration
+title: "إنجاز وجدارة - لإستقدام العمالة المنزلية"
+description: "موقع إنجاز وجدارة لإستقدام العمالة المنزلية - خدمة موثوقة ومتميزة لتوفير العمالة المنزلية من الفلبين وإثيوبيا وكينيا"
+lang: ar
+dir: rtl
+
+# SEO settings
+author: "إنجاز وجدارة"
+keywords: "استقدام, عمالة منزلية, خادمات, مربيات, الفلبين, إثيوبيا, كينيا"
+
+# Social media
+social_media:
+  whatsapp: "+966501234567"
+  
+# Theme settings (if using Jekyll themes)
+theme: minima
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - LICENSE
