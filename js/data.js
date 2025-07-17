@@ -1,0 +1,297 @@
+// Sample CV data for demonstration
+const cvData = [
+    {
+        id: 1,
+        name: "ماريا سانتوس",
+        age: 28,
+        nationality: "philippines",
+        experience: "5 سنوات",
+        skills: ["تنظيف المنزل", "رعاية الأطفال", "الطبخ"],
+        languages: ["العربية", "الإنجليزية", "التاغالوغ"],
+        image: "https://images.unsplash.com/photo-1494790108755-2616b612b647?w=300&h=300&fit=crop&crop=face",
+        description: "عاملة منزلية ذات خبرة واسعة في رعاية الأطفال والأعمال المنزلية. تتمتع بصبر كبير ومهارات تواصل ممتازة.",
+        dateAdded: "2025-01-15"
+    },
+    {
+        id: 2,
+        name: "أليس جونسون",
+        age: 25,
+        nationality: "philippines",
+        experience: "3 سنوات",
+        skills: ["تنظيف المنزل", "الطبخ", "رعاية كبار السن"],
+        languages: ["العربية", "الإنجليزية"],
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
+        description: "متخصصة في رعاية كبار السن والأعمال المنزلية العامة. لديها شهادات في الإسعافات الأولية.",
+        dateAdded: "2025-01-10"
+    },
+    {
+        id: 3,
+        name: "روز دي لا كروز",
+        age: 32,
+        nationality: "philippines",
+        experience: "8 سنوات",
+        skills: ["الطبخ المتقدم", "تنظيف المنزل", "رعاية الأطفال"],
+        languages: ["العربية", "الإنجليزية", "التاغالوغ"],
+        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face",
+        description: "طباخة ماهرة مع خبرة في المأكولات العربية والآسيوية. تتميز بالنظافة والدقة في العمل.",
+        dateAdded: "2025-01-08"
+    },
+    {
+        id: 4,
+        name: "جوي رودريجيز",
+        age: 29,
+        nationality: "philippines",
+        experience: "6 سنوات",
+        skills: ["رعاية الأطفال", "تنظيف المنزل", "الطبخ"],
+        languages: ["العربية", "الإنجليزية"],
+        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
+        description: "متخصصة في رعاية الأطفال مع خبرة في التعامل مع الأطفال ذوي الاحتياجات الخاصة.",
+        dateAdded: "2025-01-05"
+    },
+    {
+        id: 5,
+        name: "لينا توريس",
+        age: 27,
+        nationality: "philippines",
+        experience: "4 سنوات",
+        skills: ["تنظيف المنزل", "الطبخ", "كي الملابس"],
+        languages: ["العربية", "الإنجليزية"],
+        image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=300&fit=crop&crop=face",
+        description: "عاملة منزلية شاملة مع اهتمام خاص بالتفاصيل والنظافة العامة.",
+        dateAdded: "2025-01-03"
+    },
+    {
+        id: 6,
+        name: "كارمن فيلاسكيز",
+        age: 31,
+        nationality: "philippines",
+        experience: "7 سنوات",
+        skills: ["رعاية الأطفال", "الطبخ", "تنظيف المنزل"],
+        languages: ["العربية", "الإنجليزية", "التاغالوغ"],
+        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=300&fit=crop&crop=face",
+        description: "مربية أطفال ذات خبرة طويلة مع القدرة على التعامل مع أطفال متعددين في نفس الوقت.",
+        dateAdded: "2025-01-01"
+    },
+    {
+        id: 7,
+        name: "جريس باتيل",
+        age: 26,
+        nationality: "philippines",
+        experience: "4 سنوات",
+        skills: ["تنظيف المنزل", "الطبخ", "رعاية الحيوانات الأليفة"],
+        languages: ["العربية", "الإنجليزية"],
+        image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=300&fit=crop&crop=face",
+        description: "عاملة منزلية محبة للحيوانات مع خبرة في رعاية الحيوانات الأليفة.",
+        dateAdded: "2024-12-28"
+    },
+    {
+        id: 8,
+        name: "آنا رييس",
+        age: 30,
+        nationality: "philippines",
+        experience: "6 سنوات",
+        skills: ["الطبخ", "تنظيف المنزل", "رعاية كبار السن"],
+        languages: ["العربية", "الإنجليزية"],
+        image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=300&h=300&fit=crop&crop=face",
+        description: "متخصصة في رعاية كبار السن مع شهادة في التمريض المنزلي.",
+        dateAdded: "2024-12-25"
+    },
+    {
+        id: 9,
+        name: "ملك أحمد",
+        age: 24,
+        nationality: "ethiopia",
+        experience: "2 سنوات",
+        skills: ["تنظيف المنزل", "رعاية الأطفال", "الطبخ الإثيوبي"],
+        languages: ["العربية", "الإنجليزية", "الأمهرية"],
+        image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&h=300&fit=crop&crop=face",
+        description: "عاملة منزلية شابة ونشيطة مع خبرة في الطبخ الإثيوبي التقليدي.",
+        dateAdded: "2025-01-12"
+    },
+    {
+        id: 10,
+        name: "فاطمة محمد",
+        age: 29,
+        nationality: "ethiopia",
+        experience: "5 سنوات",
+        skills: ["رعاية الأطفال", "تنظيف المنزل", "الطبخ"],
+        languages: ["العربية", "الإنجليزية", "الأمهرية"],
+        image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=300&h=300&fit=crop&crop=face",
+        description: "مربية أطفال محترفة مع خبرة في التعليم المبكر للأطفال.",
+        dateAdded: "2025-01-09"
+    },
+    {
+        id: 11,
+        name: "زينب علي",
+        age: 26,
+        nationality: "ethiopia",
+        experience: "4 سنوات",
+        skills: ["تنظيف المنزل", "الطبخ", "رعاية كبار السن"],
+        languages: ["العربية", "الإنجليزية"],
+        image: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=300&h=300&fit=crop&crop=face",
+        description: "عاملة منزلية متعددة المهارات مع تركيز خاص على النظافة والترتيب.",
+        dateAdded: "2025-01-07"
+    },
+    {
+        id: 12,
+        name: "أسماء حسن",
+        age: 28,
+        nationality: "ethiopia",
+        experience: "6 سنوات",
+        skills: ["الطبخ", "رعاية الأطفال", "تنظيف المنزل"],
+        languages: ["العربية", "الإنجليزية", "الأمهرية"],
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
+        description: "طباخة ماهرة مع خبرة في المأكولات العربية والإثيوبية.",
+        dateAdded: "2025-01-04"
+    },
+    {
+        id: 13,
+        name: "هبة محمود",
+        age: 25,
+        nationality: "ethiopia",
+        experience: "3 سنوات",
+        skills: ["رعاية الأطفال", "تنظيف المنزل", "الخياطة"],
+        languages: ["العربية", "الإنجليزية"],
+        image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&h=300&fit=crop&crop=face",
+        description: "مربية أطفال مع مهارات إضافية في الخياطة وإصلاح الملابس.",
+        dateAdded: "2025-01-02"
+    },
+    {
+        id: 14,
+        name: "نور الدين",
+        age: 27,
+        nationality: "ethiopia",
+        experience: "5 سنوات",
+        skills: ["تنظيف المنزل", "الطبخ", "البستنة"],
+        languages: ["العربية", "الإنجليزية"],
+        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=face",
+        description: "عاملة منزلية مع خبرة في البستنة ورعاية النباتات.",
+        dateAdded: "2024-12-30"
+    },
+    {
+        id: 15,
+        name: "عائشة يوسف",
+        age: 30,
+        nationality: "ethiopia",
+        experience: "7 سنوات",
+        skills: ["رعاية كبار السن", "الطبخ", "تنظيف المنزل"],
+        languages: ["العربية", "الإنجليزية", "الأمهرية"],
+        image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=300&h=300&fit=crop&crop=face",
+        description: "متخصصة في رعاية كبار السن مع صبر وحنان كبيرين.",
+        dateAdded: "2024-12-27"
+    },
+    {
+        id: 16,
+        name: "سارة عبدالله",
+        age: 32,
+        nationality: "ethiopia",
+        experience: "8 سنوات",
+        skills: ["الطبخ المتقدم", "رعاية الأطفال", "تنظيف المنزل"],
+        languages: ["العربية", "الإنجليزية"],
+        image: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=300&h=300&fit=crop&crop=face",
+        description: "طباخة محترفة مع خبرة في إعداد وجبات صحية ومتنوعة.",
+        dateAdded: "2024-12-24"
+    },
+    {
+        id: 17,
+        name: "خديجة إبراهيم",
+        age: 26,
+        nationality: "ethiopia",
+        experience: "4 سنوات",
+        skills: ["تنظيف المنزل", "رعاية الأطفال", "التدليك"],
+        languages: ["العربية", "الإنجليزية"],
+        image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&h=300&fit=crop&crop=face",
+        description: "عاملة منزلية مع مهارات في التدليك العلاجي والاسترخاء.",
+        dateAdded: "2024-12-22"
+    },
+    {
+        id: 18,
+        name: "آمنة محمد",
+        age: 29,
+        nationality: "ethiopia",
+        experience: "6 سنوات",
+        skills: ["رعاية الأطفال", "الطبخ", "تنظيف المنزل"],
+        languages: ["العربية", "الإنجليزية", "الأمهرية"],
+        image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&h=300&fit=crop&crop=face",
+        description: "مربية أطفال ذات خبرة مع القدرة على التعامل مع أطفال من مختلف الأعمار.",
+        dateAdded: "2024-12-20"
+    },
+    {
+        id: 19,
+        name: "غريس واناثو",
+        age: 24,
+        nationality: "kenya",
+        experience: "2 سنوات",
+        skills: ["تنظيف المنزل", "رعاية الأطفال", "الطبخ الكيني"],
+        languages: ["العربية", "الإنجليزية", "السواحيلية"],
+        image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=300&fit=crop&crop=face",
+        description: "عاملة منزلية شابة مع خبرة في الطبخ الكيني التقليدي.",
+        dateAdded: "2025-01-11"
+    },
+    {
+        id: 20,
+        name: "مريم كيبيتو",
+        age: 27,
+        nationality: "kenya",
+        experience: "5 سنوات",
+        skills: ["رعاية الأطفال", "تنظيف المنزل", "الطبخ"],
+        languages: ["العربية", "الإنجليزية"],
+        image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=300&h=300&fit=crop&crop=face",
+        description: "مربية أطفال محترفة مع شهادة في التعليم المبكر.",
+        dateAdded: "2025-01-06"
+    },
+    {
+        id: 21,
+        name: "جوزفين موثونى",
+        age: 30,
+        nationality: "kenya",
+        experience: "7 سنوات",
+        skills: ["الطبخ", "تنظيف المنزل", "رعاية كبار السن"],
+        languages: ["العربية", "الإنجليزية", "السواحيلية"],
+        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=300&fit=crop&crop=face",
+        description: "عاملة منزلية ذات خبرة واسعة في جميع أنواع الأعمال المنزلية.",
+        dateAdded: "2024-12-31"
+    },
+    {
+        id: 22,
+        name: "ايستر نجوجي",
+        age: 25,
+        nationality: "kenya",
+        experience: "3 سنوات",
+        skills: ["تنظيف المنزل", "رعاية الأطفال", "الحرف اليدوية"],
+        languages: ["العربية", "الإنجليزية"],
+        image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=300&fit=crop&crop=face",
+        description: "عاملة منزلية إبداعية مع مهارات في الحرف اليدوية والأنشطة الترفيهية للأطفال.",
+        dateAdded: "2024-12-29"
+    },
+    {
+        id: 23,
+        name: "كاثرين وانجيكو",
+        age: 28,
+        nationality: "kenya",
+        experience: "6 سنوات",
+        skills: ["رعاية الأطفال", "الطبخ", "تنظيف المنزل"],
+        languages: ["العربية", "الإنجليزية"],
+        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face",
+        description: "مربية أطفال ذات خبرة مع تركيز على التنمية التعليمية للأطفال.",
+        dateAdded: "2024-12-26"
+    },
+    {
+        id: 24,
+        name: "بياتريس وانجيرو",
+        age: 31,
+        nationality: "kenya",
+        experience: "8 سنوات",
+        skills: ["الطبخ المتقدم", "تنظيف المنزل", "رعاية كبار السن"],
+        languages: ["العربية", "الإنجليزية", "السواحيلية"],
+        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=face",
+        description: "طباخة ماهرة مع خبرة واسعة في المأكولات المختلفة ورعاية كبار السن.",
+        dateAdded: "2024-12-23"
+    }
+];
+
+// Current displayed data (will be filtered)
+let currentCVs = [...cvData];
+let currentNationality = 'all';
+let currentSearchQuery = '';
+let currentSortBy = 'date';
